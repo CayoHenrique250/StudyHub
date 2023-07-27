@@ -1,0 +1,367 @@
+body {
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+/*DARK MODE*/
+
+body.dark {
+    background: #292c35;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    position: absolute;
+    background-color: #206186;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 26px;
+    transform: scale(1.5);
+    margin-left: 2%;
+    margin-top: 1.2%;
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    transform: translateY(2px);
+    transition: transform 0.2s linear;
+    margin-top: -27px;
+    margin-left: 2px;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateY(24px);
+}
+
+.moon img {
+    width: 16px;
+    margin-top: -5px;
+    margin-bottom: 13px;
+    margin-left: 6px;
+}
+
+.sun img {
+    width: 20px;
+    margin-top: 25px;
+    margin-left: -23px;
+}
+
+/*DARK MODE*/
+
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #132943;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 5%;
+    top: 1%;
+    height: 11%;
+    position: absolute;
+    padding: 0 5%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 2%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 105%;
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: Consolas, "Lucida Console", "Lucida Sans Typewriter";
+    font-weight: bold;
+}
+
+li a.active,
+li a:hover {
+    background: #6296D1;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.footer_left {
+    margin-left: 0;
+}
+
+.footer-col {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.links-footer a:hover {
+    color: #5797c2;
+    padding-left: 10px;
+}
+
+.dark .links-footer a:hover {
+    color: #c6e4f1;
+}
+
+.logo-footer-div {
+    margin-left: 2%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: -10%;
+}
+
+.logo-footer {
+    width: 40%;
+}
+
+.copyright {
+    color: #7e8299;
+    text-align: right;
+    margin-top: -15%;
+    margin-right: -440%;
+}
+
+.dark .copyright {
+    color: gainsboro;
+}
+
+.titulo-footer {
+    color: #132943;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.links-footer a {
+    color: #152231;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.dark .links-footer a {
+    color: #2c3e50;
+}
+
+.icons {
+    width: 6%;
+}
+
+.footer {
+    margin-top: 3%;
+    background-color: #B0CAE8;
+}
+
+.dark .footer {
+    background-color: #5797c2;
+}
+
+.row {
+    display: flex;
+    margin-left: 9%;
+    margin-top: 4%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-right: 0%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #3f73c2cc;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 2px;
+    background-color: #7d9bc9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.dots {
+    margin-top: -5%;
+    position: relative;
+    text-align: center;
+}
+
+.active,
+.dot:hover.active {
+    background-color: #c6e4f1;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+.img_tam {
+    width: 100%;
+    height: 550px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.topo {
+    position: fixed;
+    bottom: 9%;
+    right: -2%;
+    height: 10%;
+    width: 10%;
+    display: flex;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    filter: brightness(90%);
+}
+
+.topo.active {
+    opacity: 1;
+    visibility: visible;
+    background: none;
+}
+
+.dark .topo {
+    filter: brightness(130%);
+}
+
+
+@media (max-width: 952px) {
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .2s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
