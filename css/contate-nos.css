@@ -1,5 +1,4 @@
-
-.titulo_principal{
+.titulo_principal {
     margin-top: 3%;
 }
 
@@ -13,11 +12,11 @@ h1 {
     margin-bottom: 5%;
 }
 
-.dark h1{
+.dark h1 {
     background-image: linear-gradient(rgb(123, 98, 148), rgb(121, 171, 212), rgb(39, 255, 233));
 }
 
-h2{
+h2 {
     margin-left: 9%;
     font-family: Arial, Helvetica, sans-serif;
     color: #2E629E;
@@ -25,11 +24,11 @@ h2{
     margin-bottom: 2%;
 }
 
-.dark h2{
+.dark h2 {
     color: #8cb7e0;
 }
 
-.titulo_formulario{
+.titulo_formulario {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkslateblue;
@@ -37,7 +36,7 @@ h2{
     font-size: 140%;
 }
 
-.dark .titulo_formulario{
+.dark .titulo_formulario {
     color: #b5dbff;
 }
 
@@ -49,7 +48,7 @@ h2{
     border-radius: 30px;
 }
 
-.dark .form-conteiner{
+.dark .form-conteiner {
     background-color: #2E629E;
 }
 
@@ -59,7 +58,7 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.dark .titulo{
+.dark .titulo {
     color: #bee0ff;
 }
 
@@ -81,17 +80,18 @@ h2{
     font-size: 110%;
 }
 
-.dark .digitar, .form-contact textarea{
+.dark .digitar,
+.form-contact textarea {
     background-color: #67a7f0;
     border: 2px solid #bee0ff;
     color: #003261;
 }
 
-.dark .sub{
+.dark .sub {
     color: white;
 }
 
-textarea{
+textarea {
     height: 200px;
 }
 
@@ -100,11 +100,11 @@ textarea{
     margin: 30px auto;
 }
 
-.lista{
+.lista {
     margin-top: 2%;
 }
 
-.linha{
+.linha {
     list-style-type: none;
     margin-top: 1%;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,10 +127,10 @@ input[type=submit] {
     margin-right: auto;
 }
 
-.dark input[type=submit]{
+.dark input[type=submit] {
     background: linear-gradient(to bottom, #8babcc 20%, #0530bd 100%);
     border: 2px solid #5799d8;
-    
+
 }
 
 input[type=submit]:hover {
