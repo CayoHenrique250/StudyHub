@@ -67,14 +67,14 @@ body.dark {
 
 nav {
     background: #132943;
-    height: 80px;
+    height: 95px;
     width: 100%;
 }
 
 .logo {
     margin-left: 5%;
     top: 1%;
-    height: 11%;
+    height: 8.5%;
     position: absolute;
     padding: 0 5%;
 }
